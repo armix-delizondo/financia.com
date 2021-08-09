@@ -1,0 +1,26 @@
+.as-i-ask {
+	background: #EBEEF0;
+	padding: $lh*2 0;
+	padding-top: 0;
+	@include l-min {
+		padding: $lh*4 0;
+		padding-top: 0;
+	}
+	&__wrapper-title {
+		margin-bottom: $lh;
+		@include l-min {
+			margin-bottom: $lh*2;
+		}
+	}
+	&__title {
+		text-align: center;
+	}
+	&__wrapper-items {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-column-gap: $lh;
+		@include l-min {
+			grid-template-columns: repeat( 3, minmax( 100px, 1fr ) );
+		}
+	}
+}

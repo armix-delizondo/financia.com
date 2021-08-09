@@ -1,0 +1,18 @@
+.social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 $lh/2 0 $lh;
+	&__link {
+		display: inline-block;
+		padding-right: 7px;
+		&:hover .social__icon {
+			opacity: .7;
+		}
+	}
+	&__icon {
+		display: block;
+		width: $lh;
+		transition: opacity .3s ease;
+	}
+}

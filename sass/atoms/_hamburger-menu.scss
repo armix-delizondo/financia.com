@@ -1,0 +1,69 @@
+.hamburger-menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	&__button {
+		width: 32px;
+		height: 32px;
+		position: relative;
+		background: transparent;
+		border: none;
+		border-radius: 50%;
+		cursor: pointer;
+		transition: .4s ease;
+		@media only screen and (min-width: 400px) {
+			width: 37px;
+			height: 37px;
+		}
+		@include m-min {
+			width: 40px;
+			height: 40px;
+		}
+	}
+	&__line-1,
+	&__line-2,
+	&__line-3 {
+		display: block;
+		position: absolute;
+		width: 20px;
+		height: 3px;
+		left: 50%;
+		transform: translateX(-50%);
+		background: $white;
+		transition: .4s ease;
+		@media only screen and (min-width: 400px) {
+			width: 22px;
+		}
+		@include m-min {
+			width: 24px;
+		}
+	}
+	&__line-1 {
+		top: 8px;
+		@media only screen and (min-width: 400px) {
+			top: 10px;;
+		}
+		@include m-min {
+			top: 12px;
+		}
+	}
+	&__line-2 {
+		top: 15px;
+		@media only screen and (min-width: 400px) {
+			top: 17px;;
+		}
+		@include m-min {
+			top: 19px;
+		}
+	}
+	&__line-3 {
+		top: 21px;
+		@media only screen and (min-width: 400px) {
+			top: 24px;
+		}
+		@include m-min {
+			top: 26px;
+		}
+	}
+}

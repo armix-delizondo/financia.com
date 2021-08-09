@@ -1,0 +1,15 @@
+.our-products {
+	&__wrapper-title {
+		padding: $lh*3 0 $lh*10 0;
+		background: url('../images/back-products-mobile.jpg') center center no-repeat;
+		background-size: cover;
+		@include l-min {
+			padding: $lh*5;
+			background: url('../images/back-products.jpg') no-repeat;
+			background-size: cover;
+		}
+	}
+	&__title {
+		text-align: center;
+	}
+}

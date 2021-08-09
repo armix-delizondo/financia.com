@@ -1,0 +1,71 @@
+.footer {
+	background: $white;
+	padding: $lh 0;
+	padding-bottom: 0;
+	@include l-min {
+		padding: 0;
+	}
+	&__wrapper-content {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
+		align-items: center;
+		@include l-min {
+			grid-template-columns: repeat( 3, minmax( 100px, 1fr ) );
+		}
+	}
+	&__wrapper-logo {
+		grid-column: span 1;
+		margin: $lh 0;
+		@include l-min {
+			grid-column: span 3;
+			margin: $lh*2 0;
+		}
+	}
+	&__logo {
+		width: 265px;
+		display: block;
+		margin: 0 auto;
+		@include l-min {
+			width: 285px;
+		}
+	}
+	&__info {
+		text-align: center;
+		padding: $lh;
+		@include l-min {
+			padding: $lh*2;
+			padding-top: 0;
+		}
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 300;
+		@include l-min {
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+	&__bottom {
+		background: $black;
+		text-align: center;
+		padding: $lh/4 0;
+	}
+	&__copyright {
+		color: $white;
+		font-size: 10px;
+		line-height: 14px;
+		font-weight: 300;
+		@include l-min {
+			font-size: 12px;
+			line-height: 16px;
+		}
+	}
+	.social {
+		margin-bottom: $lh*2;
+		@include l-min {
+			margin-bottom: 0;
+		}
+	}
+}

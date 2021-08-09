@@ -1,0 +1,1847 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, sass/@config/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, sass/@config/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, sass/@config/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, sass/@config/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, sass/@config/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, sass/@config/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, sass/@config/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 52, sass/@config/_reset.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 2, sass/@config/_grid.scss */
+.container {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 2, sass/@config/_grid.scss */
+  .container {
+    width: 960px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 2, sass/@config/_grid.scss */
+  .container {
+    width: 1280px;
+  }
+}
+
+/* line 1, sass/@config/_config.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+/* line 4, sass/@config/_config.scss */
+body {
+  font-family: "Heebo", sans-serif;
+}
+
+/* line 8, sass/@config/_config.scss */
+::-moz-selection {
+  color: #ffffff;
+  background-color: #08C6B5;
+}
+::selection {
+  color: #ffffff;
+  background-color: #08C6B5;
+}
+
+/* line 13, sass/@config/_config.scss */
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 20, sass/@config/_config.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 25, sass/@config/_config.scss */
+button:focus {
+  outline: none;
+}
+
+/* line 28, sass/@config/_config.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 31, sass/@config/_config.scss */
+blockquote {
+  font-style: italic;
+  position: relative;
+}
+
+/* line 42, sass/@config/_config.scss */
+.image--fluid {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 45, sass/@config/_config.scss */
+  .d--mobile {
+    display: none;
+  }
+}
+
+/* line 50, sass/@config/_config.scss */
+.d--desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 50, sass/@config/_config.scss */
+  .d--desktop {
+    display: block;
+  }
+}
+
+/* line 56, sass/@config/_config.scss */
+.button {
+  display: inline-block;
+  padding: 13px 39px;
+  color: #ffffff;
+  background: #08C6B5;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 26px;
+  -webkit-transition: background .4s ease, color .4s ease;
+  transition: background .4s ease, color .4s ease;
+}
+
+/* line 67, sass/@config/_config.scss */
+.button:hover {
+  background: #000000;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 56, sass/@config/_config.scss */
+  .button {
+    font-size: 15px;
+  }
+}
+
+/* line 74, sass/@config/_config.scss */
+.title {
+  color: #000000;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 74, sass/@config/_config.scss */
+  .title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 74, sass/@config/_config.scss */
+  .title {
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
+
+/* line 2, sass/atoms/_logo.scss */
+.logo__link {
+  display: inline-block;
+}
+
+/* line 5, sass/atoms/_logo.scss */
+.logo__image {
+  display: block;
+  width: 220px;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+/* line 9, sass/atoms/_logo.scss */
+.logo__image:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 5, sass/atoms/_logo.scss */
+  .logo__image {
+    width: 240px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 5, sass/atoms/_logo.scss */
+  .logo__image {
+    width: 380px;
+  }
+}
+
+/* line 1, sass/atoms/_social.scss */
+.social {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0 13px 0 26px;
+}
+
+/* line 6, sass/atoms/_social.scss */
+.social__link {
+  display: inline-block;
+  padding-right: 7px;
+}
+
+/* line 9, sass/atoms/_social.scss */
+.social__link:hover .social__icon {
+  opacity: .7;
+}
+
+/* line 13, sass/atoms/_social.scss */
+.social__icon {
+  display: block;
+  width: 26px;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+/* line 1, sass/atoms/_hamburger-menu.scss */
+.hamburger-menu {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* line 6, sass/atoms/_hamburger-menu.scss */
+.hamburger-menu__button {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+@media only screen and (min-width: 400px) {
+  /* line 6, sass/atoms/_hamburger-menu.scss */
+  .hamburger-menu__button {
+    width: 37px;
+    height: 37px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 6, sass/atoms/_hamburger-menu.scss */
+  .hamburger-menu__button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* line 24, sass/atoms/_hamburger-menu.scss */
+.hamburger-menu__line-1, .hamburger-menu__line-2, .hamburger-menu__line-3 {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: #ffffff;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+@media only screen and (min-width: 400px) {
+  /* line 24, sass/atoms/_hamburger-menu.scss */
+  .hamburger-menu__line-1, .hamburger-menu__line-2, .hamburger-menu__line-3 {
+    width: 22px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 24, sass/atoms/_hamburger-menu.scss */
+  .hamburger-menu__line-1, .hamburger-menu__line-2, .hamburger-menu__line-3 {
+    width: 24px;
+  }
+}
+
+/* line 42, sass/atoms/_hamburger-menu.scss */
+.hamburger-menu__line-1 {
+  top: 8px;
+}
+
+@media only screen and (min-width: 400px) {
+  /* line 42, sass/atoms/_hamburger-menu.scss */
+  .hamburger-menu__line-1 {
+    top: 10px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 42, sass/atoms/_hamburger-menu.scss */
+  .hamburger-menu__line-1 {
+    top: 12px;
+  }
+}
+
+/* line 51, sass/atoms/_hamburger-menu.scss */
+.hamburger-menu__line-2 {
+  top: 15px;
+}
+
+@media only screen and (min-width: 400px) {
+  /* line 51, sass/atoms/_hamburger-menu.scss */
+  .hamburger-menu__line-2 {
+    top: 17px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 51, sass/atoms/_hamburger-menu.scss */
+  .hamburger-menu__line-2 {
+    top: 19px;
+  }
+}
+
+/* line 60, sass/atoms/_hamburger-menu.scss */
+.hamburger-menu__line-3 {
+  top: 21px;
+}
+
+@media only screen and (min-width: 400px) {
+  /* line 60, sass/atoms/_hamburger-menu.scss */
+  .hamburger-menu__line-3 {
+    top: 24px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 60, sass/atoms/_hamburger-menu.scss */
+  .hamburger-menu__line-3 {
+    top: 26px;
+  }
+}
+
+/* line 1, sass/molecules/_menu-mobile.scss */
+.menu-mobile {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-content: space-between;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  padding: 26px;
+  background: #000000;
+  z-index: 999;
+  -webkit-transition: right .5s ease;
+  transition: right .5s ease;
+}
+
+/* line 15, sass/molecules/_menu-mobile.scss */
+.menu-mobile.active {
+  right: 0;
+}
+
+/* line 18, sass/molecules/_menu-mobile.scss */
+.menu-mobile__wrapper-button {
+  -webkit-box-flex: 0;
+  flex: 0 0 100%;
+  padding-top: 65px;
+}
+
+/* line 22, sass/molecules/_menu-mobile.scss */
+.menu-mobile__close-link {
+  display: inline-block;
+}
+
+/* line 25, sass/molecules/_menu-mobile.scss */
+.menu-mobile__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+/* line 32, sass/molecules/_menu-mobile.scss */
+.menu-mobile__close:hover {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 36, sass/molecules/_menu-mobile.scss */
+.menu-mobile__cross {
+  display: block;
+  width: auto;
+  height: 31.2px;
+}
+
+/* line 41, sass/molecules/_menu-mobile.scss */
+.menu-mobile__button {
+  -webkit-box-flex: 0;
+  flex: 0 0 100%;
+  color: #000000;
+  background: #ffffff;
+}
+
+/* line 45, sass/molecules/_menu-mobile.scss */
+.menu-mobile__button:hover {
+  color: #ffffff;
+  background: #08C6B5;
+}
+
+/* line 50, sass/molecules/_menu-mobile.scss */
+.menu-mobile__navigation {
+  -webkit-box-flex: 0;
+  flex: 0 0 100%;
+}
+
+/* line 53, sass/molecules/_menu-mobile.scss */
+.menu-mobile__social {
+  -webkit-box-flex: 0;
+  flex: 0 0 100%;
+}
+
+/* line 55, sass/molecules/_menu-mobile.scss */
+.menu-mobile__social .social {
+  padding: 0;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+
+/* line 60, sass/molecules/_menu-mobile.scss */
+.menu-mobile__link {
+  color: #ffffff;
+  display: block;
+  padding: 13px 0;
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
+}
+
+/* line 65, sass/molecules/_menu-mobile.scss */
+.menu-mobile__link:hover, .menu-mobile__link:focus {
+  color: #08C6B5;
+}
+
+/* line 1, sass/molecules/_menu-desktop.scss */
+.menu-desktop {
+  display: none;
+  background: #EDF0F2;
+  padding: 8.66667px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 1, sass/molecules/_menu-desktop.scss */
+  .menu-desktop {
+    display: block;
+  }
+}
+
+/* line 8, sass/molecules/_menu-desktop.scss */
+.menu-desktop__navigation {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+/* line 14, sass/molecules/_menu-desktop.scss */
+.menu-desktop__link {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 300;
+  -webkit-transition: font-weight .3s ease;
+  transition: font-weight .3s ease;
+}
+
+/* line 21, sass/molecules/_menu-desktop.scss */
+.menu-desktop__link:hover {
+  font-weight: 700;
+}
+
+/* line 1, sass/molecules/_calculator.scss */
+.calculator {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 31.2px;
+  background: url("../images/background-calculator.jpg") center center no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 1, sass/molecules/_calculator.scss */
+  .calculator {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    padding: 52px;
+  }
+}
+
+/* line 12, sass/molecules/_calculator.scss */
+.calculator__wrapper-image {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 12, sass/molecules/_calculator.scss */
+  .calculator__wrapper-image {
+    margin-bottom: 0;
+  }
+}
+
+/* line 21, sass/molecules/_calculator.scss */
+.calculator__image {
+  display: block;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 21, sass/molecules/_calculator.scss */
+  .calculator__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 32, sass/molecules/_calculator.scss */
+  .calculator__content {
+    padding: 0 26px;
+  }
+}
+
+/* line 37, sass/molecules/_calculator.scss */
+.calculator__title {
+  color: #000000;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 37, sass/molecules/_calculator.scss */
+  .calculator__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 37, sass/molecules/_calculator.scss */
+  .calculator__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+/* line 50, sass/molecules/_calculator.scss */
+.calculator__line {
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+  margin: 26px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 50, sass/molecules/_calculator.scss */
+  .calculator__line {
+    margin: 13px 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 50, sass/molecules/_calculator.scss */
+  .calculator__line {
+    margin: 26px 0;
+  }
+}
+
+/* line 62, sass/molecules/_calculator.scss */
+.calculator__amount {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+/* line 68, sass/molecules/_calculator.scss */
+.calculator__range {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 8.66667px 0 13px 0;
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 68, sass/molecules/_calculator.scss */
+  .calculator__range {
+    margin: 26px 0;
+  }
+}
+
+/* line 78, sass/molecules/_calculator.scss */
+.calculator__wrapper-can-have {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  grid-column-gap: 13px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: #46D4C7;
+  border-radius: 20px;
+  padding: 13px 0;
+  margin-bottom: 17.33333px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 78, sass/molecules/_calculator.scss */
+  .calculator__wrapper-can-have {
+    margin-bottom: 13px;
+  }
+}
+
+/* line 92, sass/molecules/_calculator.scss */
+.calculator__can-have-text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  text-align: right;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 92, sass/molecules/_calculator.scss */
+  .calculator__can-have-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 92, sass/molecules/_calculator.scss */
+  .calculator__can-have-text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+/* line 106, sass/molecules/_calculator.scss */
+.calculator__can-have-number {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: left;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 106, sass/molecules/_calculator.scss */
+  .calculator__can-have-number {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 106, sass/molecules/_calculator.scss */
+  .calculator__can-have-number {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+/* line 120, sass/molecules/_calculator.scss */
+.calculator__wrapper-fee {
+  display: grid;
+  grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 13px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 120, sass/molecules/_calculator.scss */
+  .calculator__wrapper-fee {
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
+    grid-column-gap: 13px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 120, sass/molecules/_calculator.scss */
+  .calculator__wrapper-fee {
+    grid-column-gap: 26px;
+  }
+}
+
+/* line 136, sass/molecules/_calculator.scss */
+.calculator__fee-image {
+  display: block;
+  width: 68px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 136, sass/molecules/_calculator.scss */
+  .calculator__fee-image {
+    width: 55px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 136, sass/molecules/_calculator.scss */
+  .calculator__fee-image {
+    width: 68px;
+  }
+}
+
+/* line 147, sass/molecules/_calculator.scss */
+.calculator__fee-text {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  text-align: center;
+  padding: 6.5px 0;
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 147, sass/molecules/_calculator.scss */
+  .calculator__fee-text {
+    padding: 0;
+    text-align: left;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+/* line 160, sass/molecules/_calculator.scss */
+.calculator__fee-number {
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 700;
+  text-align: center;
+  padding: 6.5px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 160, sass/molecules/_calculator.scss */
+  .calculator__fee-number {
+    padding: 0;
+    text-align: left;
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 160, sass/molecules/_calculator.scss */
+  .calculator__fee-number {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+/* line 177, sass/molecules/_calculator.scss */
+.calculator__wrapper-button {
+  margin: 26px 0;
+}
+
+/* line 180, sass/molecules/_calculator.scss */
+.calculator__button {
+  width: 100%;
+  background: #000000;
+}
+
+/* line 183, sass/molecules/_calculator.scss */
+.calculator__button:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 180, sass/molecules/_calculator.scss */
+  .calculator__button {
+    width: auto;
+  }
+}
+
+/* line 1, sass/molecules/_as-i-ask-item.scss */
+.as-i-ask-item {
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 25px;
+  margin-bottom: 26px;
+  -webkit-transition: box-shadow .3s ease;
+  transition: box-shadow .3s ease;
+}
+
+/* line 7, sass/molecules/_as-i-ask-item.scss */
+.as-i-ask-item:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* line 10, sass/molecules/_as-i-ask-item.scss */
+.as-i-ask-item:hover .as-i-ask-item__image {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+/* line 13, sass/molecules/_as-i-ask-item.scss */
+.as-i-ask-item__wrapper-step {
+  padding: 10px 26px;
+  margin-bottom: 13px;
+  border-radius: 10px;
+}
+
+/* line 17, sass/molecules/_as-i-ask-item.scss */
+.as-i-ask-item__wrapper-step:nth-child(1) {
+  background: url("../images/back-step-number-one.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+/* line 21, sass/molecules/_as-i-ask-item.scss */
+.as-i-ask-item__wrapper-step:nth-child(2) {
+  background: url("../images/back-step-number-two.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+/* line 25, sass/molecules/_as-i-ask-item.scss */
+.as-i-ask-item__wrapper-step:nth-child(3) {
+  background: url("../images/back-step-number-three.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+/* line 30, sass/molecules/_as-i-ask-item.scss */
+.as-i-ask-item__wrapper-image {
+  overflow: hidden;
+}
+
+/* line 33, sass/molecules/_as-i-ask-item.scss */
+.as-i-ask-item__image {
+  display: block;
+  width: 100%;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+/* line 38, sass/molecules/_as-i-ask-item.scss */
+.as-i-ask-item__step {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 38, sass/molecules/_as-i-ask-item.scss */
+  .as-i-ask-item__step {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+/* line 1, sass/molecules/_slider-products.scss */
+.slider-products {
+  background: #08C6B5;
+  padding: 52px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 1, sass/molecules/_slider-products.scss */
+  .slider-products {
+    padding: 104px 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  /* line 7, sass/molecules/_slider-products.scss */
+  .slider-products__container.container {
+    width: 100%;
+  }
+}
+
+/* line 12, sass/molecules/_slider-products.scss */
+.slider-products__container-slider {
+  width: 100%;
+}
+
+/* line 15, sass/molecules/_slider-products.scss */
+.slider-products__slide {
+  border-radius: 25px;
+  overflow: hidden;
+  background: #ffffff;
+  width: 80vw;
+  margin: 0 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 15, sass/molecules/_slider-products.scss */
+  .slider-products__slide {
+    margin: 0;
+  }
+}
+
+/* line 25, sass/molecules/_slider-products.scss */
+.slider-products__button-prev {
+  color: #000000;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 25, sass/molecules/_slider-products.scss */
+  .slider-products__button-prev {
+    left: 30px;
+  }
+}
+
+/* line 31, sass/molecules/_slider-products.scss */
+.slider-products__button-next {
+  color: #000000;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 31, sass/molecules/_slider-products.scss */
+  .slider-products__button-next {
+    right: 30px;
+  }
+}
+
+/* line 37, sass/molecules/_slider-products.scss */
+.slider-products__image {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 43, sass/molecules/_slider-products.scss */
+.slider-products__content-slide {
+  position: relative;
+  margin-top: -26px;
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 25px 25px 0 0;
+  z-index: 2;
+}
+
+/* line 51, sass/molecules/_slider-products.scss */
+.slider-products__title-slide {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 51, sass/molecules/_slider-products.scss */
+  .slider-products__title-slide {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+/* line 61, sass/molecules/_slider-products.scss */
+.slider-products__item-list {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 61, sass/molecules/_slider-products.scss */
+  .slider-products__item-list {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* line 70, sass/molecules/_slider-products.scss */
+.slider-products .swiper-pagination-bullet-active {
+  background: #000000;
+}
+
+/* line 1, sass/molecules/_why-financia-items.scss */
+.why-financia-items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  -webkit-box-pack: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 26px;
+  margin-top: -50px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 1, sass/molecules/_why-financia-items.scss */
+  .why-financia-items {
+    grid-template-columns: repeat(5, minmax(50px, 1fr));
+    padding: 39px;
+    margin-top: -150px;
+  }
+}
+
+/* line 15, sass/molecules/_why-financia-items.scss */
+.why-financia-items__wrapper-icon {
+  margin-bottom: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 15, sass/molecules/_why-financia-items.scss */
+  .why-financia-items__wrapper-icon {
+    margin-bottom: 0;
+  }
+}
+
+/* line 21, sass/molecules/_why-financia-items.scss */
+.why-financia-items__wrapper-icon:nth-child(5) {
+  grid-column: span 2;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 21, sass/molecules/_why-financia-items.scss */
+  .why-financia-items__wrapper-icon:nth-child(5) {
+    grid-column: span 1;
+  }
+}
+
+/* line 28, sass/molecules/_why-financia-items.scss */
+.why-financia-items__icon {
+  display: block;
+  width: 110px;
+  margin: 0 auto;
+  margin-bottom: 13px;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+/* line 34, sass/molecules/_why-financia-items.scss */
+.why-financia-items__icon:hover {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 28, sass/molecules/_why-financia-items.scss */
+  .why-financia-items__icon {
+    width: 125px;
+  }
+}
+
+/* line 2, sass/molecules/_logos-adhered-businesses.scss */
+.logos-adhered-businesses__container-slider {
+  width: 100%;
+}
+
+/* line 5, sass/molecules/_logos-adhered-businesses.scss */
+.logos-adhered-businesses__button-prev {
+  color: #000000;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 5, sass/molecules/_logos-adhered-businesses.scss */
+  .logos-adhered-businesses__button-prev {
+    left: 30px;
+  }
+}
+
+/* line 11, sass/molecules/_logos-adhered-businesses.scss */
+.logos-adhered-businesses__button-next {
+  color: #000000;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 11, sass/molecules/_logos-adhered-businesses.scss */
+  .logos-adhered-businesses__button-next {
+    right: 30px;
+  }
+}
+
+/* line 17, sass/molecules/_logos-adhered-businesses.scss */
+.logos-adhered-businesses .swiper-pagination-bullet-active {
+  background: #000000;
+}
+
+/* line 1, sass/organisms/_header.scss */
+.header {
+  background: #000000;
+  padding: 13px;
+}
+
+/* line 4, sass/organisms/_header.scss */
+.header__mobile {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 4, sass/organisms/_header.scss */
+  .header__mobile {
+    display: none;
+  }
+}
+
+/* line 11, sass/organisms/_header.scss */
+.header__desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 11, sass/organisms/_header.scss */
+  .header__desktop {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto auto;
+  }
+}
+
+/* line 19, sass/organisms/_header.scss */
+.header__button {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0 52px;
+}
+
+/* line 25, sass/organisms/_header.scss */
+.header__button-link {
+  -webkit-box-flex: 0;
+  flex: 0 0 100%;
+  color: #000000;
+  background: #ffffff;
+}
+
+/* line 29, sass/organisms/_header.scss */
+.header__button-link:hover {
+  color: #ffffff;
+  background: #08C6B5;
+}
+
+/* line 1, sass/organisms/_cover.scss */
+.cover {
+  width: 100%;
+  position: relative;
+}
+
+/* line 4, sass/organisms/_cover.scss */
+.cover__container-slider {
+  width: 100%;
+}
+
+/* line 7, sass/organisms/_cover.scss */
+.cover__slide {
+  position: relative;
+}
+
+/* line 10, sass/organisms/_cover.scss */
+.cover__content-slide {
+  width: 90%;
+  position: absolute;
+  top: 70%;
+  left: 5%;
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 10, sass/organisms/_cover.scss */
+  .cover__content-slide {
+    width: auto;
+    top: 50%;
+    left: 20%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  /* line 23, sass/organisms/_cover.scss */
+  .cover__content-slide--right {
+    width: auto;
+    top: 50%;
+    left: auto;
+    right: 20%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+/* line 32, sass/organisms/_cover.scss */
+.cover__heading-slide {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 32, sass/organisms/_cover.scss */
+  .cover__heading-slide {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 32, sass/organisms/_cover.scss */
+  .cover__heading-slide {
+    font-size: 55px;
+    line-height: 61px;
+  }
+}
+
+/* line 45, sass/organisms/_cover.scss */
+.cover__sub-heading-slide {
+  margin-top: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 45, sass/organisms/_cover.scss */
+  .cover__sub-heading-slide {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 45, sass/organisms/_cover.scss */
+  .cover__sub-heading-slide {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+/* line 56, sass/organisms/_cover.scss */
+.cover__span-color {
+  color: #08C6B5;
+  font-weight: 700;
+}
+
+/* line 60, sass/organisms/_cover.scss */
+.cover__button-slide {
+  width: 100%;
+  margin-top: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 60, sass/organisms/_cover.scss */
+  .cover__button-slide {
+    width: auto;
+    margin-top: 31.2px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 60, sass/organisms/_cover.scss */
+  .cover__button-slide {
+    margin-top: 39px;
+  }
+}
+
+/* line 71, sass/organisms/_cover.scss */
+.cover__button-prev {
+  color: #000000;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 71, sass/organisms/_cover.scss */
+  .cover__button-prev {
+    left: 30px;
+  }
+}
+
+/* line 77, sass/organisms/_cover.scss */
+.cover__button-next {
+  color: #000000;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 77, sass/organisms/_cover.scss */
+  .cover__button-next {
+    right: 30px;
+  }
+}
+
+/* line 1, sass/organisms/_your-loan.scss */
+.your-loan {
+  background: #EDF0F2;
+  padding: 52px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 1, sass/organisms/_your-loan.scss */
+  .your-loan {
+    padding: 104px 0;
+  }
+}
+
+/* line 7, sass/organisms/_your-loan.scss */
+.your-loan__wrapper-title {
+  margin-bottom: 52px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 7, sass/organisms/_your-loan.scss */
+  .your-loan__wrapper-title {
+    margin-bottom: 78px;
+  }
+}
+
+/* line 13, sass/organisms/_your-loan.scss */
+.your-loan__title {
+  text-align: center;
+}
+
+/* line 1, sass/organisms/_as-i-ask.scss */
+.as-i-ask {
+  background: #EBEEF0;
+  padding: 52px 0;
+  padding-top: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 1, sass/organisms/_as-i-ask.scss */
+  .as-i-ask {
+    padding: 104px 0;
+    padding-top: 0;
+  }
+}
+
+/* line 9, sass/organisms/_as-i-ask.scss */
+.as-i-ask__wrapper-title {
+  margin-bottom: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 9, sass/organisms/_as-i-ask.scss */
+  .as-i-ask__wrapper-title {
+    margin-bottom: 52px;
+  }
+}
+
+/* line 15, sass/organisms/_as-i-ask.scss */
+.as-i-ask__title {
+  text-align: center;
+}
+
+/* line 18, sass/organisms/_as-i-ask.scss */
+.as-i-ask__wrapper-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 18, sass/organisms/_as-i-ask.scss */
+  .as-i-ask__wrapper-items {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+}
+
+/* line 2, sass/organisms/_our-products.scss */
+.our-products__wrapper-title {
+  padding: 78px 0 260px 0;
+  background: url("../images/back-products-mobile.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 2, sass/organisms/_our-products.scss */
+  .our-products__wrapper-title {
+    padding: 130px;
+    background: url("../images/back-products.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+/* line 12, sass/organisms/_our-products.scss */
+.our-products__title {
+  text-align: center;
+}
+
+/* line 1, sass/organisms/_why-financia.scss */
+.why-financia {
+  background: #ECEFF1;
+}
+
+/* line 3, sass/organisms/_why-financia.scss */
+.why-financia__wrapper-title {
+  padding: 78px 0 260px 0;
+  background: url("../images/back-elegi-financia-mobile.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 3, sass/organisms/_why-financia.scss */
+  .why-financia__wrapper-title {
+    padding: 130px 0 234px 0;
+    background: url("../images/back-elegi-financia.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+/* line 13, sass/organisms/_why-financia.scss */
+.why-financia__title {
+  text-align: center;
+}
+
+/* line 1, sass/organisms/_adhered-businesses.scss */
+.adhered-businesses {
+  background: #EBEEF0;
+  padding: 52px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 1, sass/organisms/_adhered-businesses.scss */
+  .adhered-businesses {
+    padding: 104px 0;
+  }
+}
+
+/* line 7, sass/organisms/_adhered-businesses.scss */
+.adhered-businesses__wrapper-title {
+  margin-bottom: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 7, sass/organisms/_adhered-businesses.scss */
+  .adhered-businesses__wrapper-title {
+    margin-bottom: 52px;
+  }
+}
+
+/* line 13, sass/organisms/_adhered-businesses.scss */
+.adhered-businesses__title {
+  text-align: center;
+}
+
+/* line 1, sass/organisms/_about-us.scss */
+.about-us {
+  background: #EBEEF0;
+  padding: 52px 0;
+  padding-top: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 1, sass/organisms/_about-us.scss */
+  .about-us {
+    padding: 104px 0;
+    padding-top: 0;
+  }
+}
+
+/* line 9, sass/organisms/_about-us.scss */
+.about-us__wrapper-content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 9, sass/organisms/_about-us.scss */
+  .about-us__wrapper-content {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-column-gap: 26px;
+  }
+}
+
+/* line 17, sass/organisms/_about-us.scss */
+.about-us__wrapper-title {
+  margin-bottom: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 17, sass/organisms/_about-us.scss */
+  .about-us__wrapper-title {
+    margin-bottom: 52px;
+  }
+}
+
+/* line 23, sass/organisms/_about-us.scss */
+.about-us__title {
+  text-align: center;
+}
+
+/* line 26, sass/organisms/_about-us.scss */
+.about-us__main-card {
+  grid-column: span 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 26px;
+  margin-bottom: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 26, sass/organisms/_about-us.scss */
+  .about-us__main-card {
+    grid-column: span 3;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    padding: 52px;
+  }
+}
+
+/* line 42, sass/organisms/_about-us.scss */
+.about-us__wrapper-logo {
+  margin-bottom: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 42, sass/organisms/_about-us.scss */
+  .about-us__wrapper-logo {
+    margin-bottom: 0;
+  }
+}
+
+/* line 48, sass/organisms/_about-us.scss */
+.about-us__logo {
+  width: 220px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 48, sass/organisms/_about-us.scss */
+  .about-us__logo {
+    width: 300px;
+  }
+}
+
+/* line 56, sass/organisms/_about-us.scss */
+.about-us__main-text {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 56, sass/organisms/_about-us.scss */
+  .about-us__main-text {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 56, sass/organisms/_about-us.scss */
+  .about-us__main-text {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+/* line 69, sass/organisms/_about-us.scss */
+.about-us__card {
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 26px;
+  margin-bottom: 26px;
+}
+
+/* line 75, sass/organisms/_about-us.scss */
+.about-us__icon {
+  display: block;
+  width: 80px;
+  margin-right: auto;
+  margin-bottom: 26px;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+/* line 81, sass/organisms/_about-us.scss */
+.about-us__icon:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/* line 85, sass/organisms/_about-us.scss */
+.about-us__text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 85, sass/organisms/_about-us.scss */
+  .about-us__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+/* line 94, sass/organisms/_about-us.scss */
+.about-us__big-card {
+  grid-column: span 1;
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 94, sass/organisms/_about-us.scss */
+  .about-us__big-card {
+    grid-column: span 3;
+    padding: 52px;
+  }
+}
+
+/* line 104, sass/organisms/_about-us.scss */
+.about-us__big-text {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 104, sass/organisms/_about-us.scss */
+  .about-us__big-text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 104, sass/organisms/_about-us.scss */
+  .about-us__big-text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+/* line 1, sass/organisms/_footer.scss */
+.footer {
+  background: #ffffff;
+  padding: 26px 0;
+  padding-bottom: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 1, sass/organisms/_footer.scss */
+  .footer {
+    padding: 0;
+  }
+}
+
+/* line 8, sass/organisms/_footer.scss */
+.footer__wrapper-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 8, sass/organisms/_footer.scss */
+  .footer__wrapper-content {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+}
+
+/* line 17, sass/organisms/_footer.scss */
+.footer__wrapper-logo {
+  grid-column: span 1;
+  margin: 26px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 17, sass/organisms/_footer.scss */
+  .footer__wrapper-logo {
+    grid-column: span 3;
+    margin: 52px 0;
+  }
+}
+
+/* line 25, sass/organisms/_footer.scss */
+.footer__logo {
+  width: 265px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 25, sass/organisms/_footer.scss */
+  .footer__logo {
+    width: 285px;
+  }
+}
+
+/* line 33, sass/organisms/_footer.scss */
+.footer__info {
+  text-align: center;
+  padding: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 33, sass/organisms/_footer.scss */
+  .footer__info {
+    padding: 52px;
+    padding-top: 0;
+  }
+}
+
+/* line 41, sass/organisms/_footer.scss */
+.footer__text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 41, sass/organisms/_footer.scss */
+  .footer__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+/* line 50, sass/organisms/_footer.scss */
+.footer__bottom {
+  background: #000000;
+  text-align: center;
+  padding: 6.5px 0;
+}
+
+/* line 55, sass/organisms/_footer.scss */
+.footer__copyright {
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 55, sass/organisms/_footer.scss */
+  .footer__copyright {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+/* line 65, sass/organisms/_footer.scss */
+.footer .social {
+  margin-bottom: 52px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 65, sass/organisms/_footer.scss */
+  .footer .social {
+    margin-bottom: 0;
+  }
+}

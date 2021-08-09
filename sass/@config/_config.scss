@@ -1,0 +1,87 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: $ff1;
+}
+
+::selection {
+	color: $white;
+	background-color: $color_primary;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button:focus {
+	outline: none;
+}
+strong {
+	font-weight: 700;
+}
+blockquote {
+	font-style: italic;
+	position: relative;
+}
+
+// p,
+// a,
+// h1,
+// h2,
+// h3,
+// h4
+.image--fluid {
+	max-width: 100%;
+}
+.d--mobile {
+	@include m-min {
+		display: none;
+	}
+}
+.d--desktop {
+	display: none;
+	@include m-min {
+		display: block;
+	}
+}
+.button {
+	display: inline-block;
+	padding: $lh/2 $lh*1.5;
+	color: $white;
+	background: $color_primary;
+	font-size: 14px;
+	line-height: 1;
+	font-weight: 700;
+	text-align: center;
+	border-radius: $lh;
+	transition: background .4s ease, color .4s ease;
+	&:hover {
+		background: $black;
+	}
+	@include l-min {
+		font-size: 15px;
+	}
+}
+.title {
+	color: $black;
+	font-size: 28px;
+	line-height: 34px;
+	font-weight: 300;
+	@include l-min {
+		font-size: 36px;
+		line-height: 42px;
+	}
+	@include xl-min {
+		font-size: 42px;
+		line-height: 48px;
+	}
+}

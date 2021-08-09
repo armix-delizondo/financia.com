@@ -1,0 +1,16 @@
+.your-loan {
+	background: #EDF0F2;
+	padding: $lh*2 0;
+	@include l-min {
+		padding: $lh*4 0;
+	}
+	&__wrapper-title {
+		margin-bottom: $lh*2;
+		@include l-min {
+			margin-bottom: $lh*3;
+		}
+	}
+	&__title {
+		text-align: center;
+	}
+}

@@ -1,0 +1,191 @@
+.calculator {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: $lh*1.2;
+	background: url('../images/background-calculator.jpg') center center no-repeat;
+	background-size: cover;
+	border-radius: 25px;
+	@include l-min {
+		grid-template-columns: repeat( 2, minmax( 100px, 1fr ) );
+		padding: $lh*2;
+	}
+	&__wrapper-image {
+		position: relative;
+		border-radius: 25px;
+		overflow: hidden;
+		margin-bottom: $lh;
+		@include l-min {
+			margin-bottom: 0;
+		}
+	}
+	&__image {		
+		display: block;
+		width: 100%;	
+		@include l-min {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			object-fit: cover;
+		}	
+	}
+	&__content {	
+		@include l-min {
+			padding: 0 $lh;
+		}
+	}
+	&__title {
+		color: $black;
+		font-size: 22px;
+		line-height: 26px;
+		@include l-min {
+			font-size: 26px;
+			line-height: 30px;
+		}
+		@include xl-min {
+			font-size: 32px;
+			line-height: 36px;
+		}
+	}
+	&__line {
+		width: 100%;
+		height: 1px;
+		background: $white;
+		margin: $lh 0;
+		@include l-min {
+			margin: $lh/2 0;
+		}
+		@include xl-min {
+			margin: $lh 0;
+		}
+	}
+	&__amount {
+		color: $white;
+		font-size: 22px;
+		line-height: 26px;
+		font-weight: 700;
+	}
+	&__range {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		display: block;
+		margin: $lh/3 0 $lh/2 0;
+		@include xl-min {
+			margin: $lh 0;
+		}
+	}
+	&__wrapper-can-have {
+		display: grid;
+		grid-template-columns: repeat( 2, minmax( 50px, 1fr ) );
+		grid-column-gap: $lh/2;
+		justify-content: center;
+		align-items: center;
+		background: #46D4C7;
+		border-radius: 20px;
+		padding: $lh/2 0;
+		margin-bottom: $lh/1.5;
+		@include l-min {
+			margin-bottom: $lh/2;
+		}
+	}
+	&__can-have-text {
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 300;
+		text-align: right;
+		@include l-min {
+			font-size: 18px;
+			line-height: 22px;
+		}
+		@include xl-min {
+			font-size: 20px;
+			line-height: 26px;
+		}
+	}
+	&__can-have-number {
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 700;
+		text-align: left;
+		@include l-min {
+			font-size: 22px;
+			line-height: 26px;
+		}
+		@include l-min {
+			font-size: 24px;
+			line-height: 28px;
+		}
+	}
+	&__wrapper-fee {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
+		align-items: center;
+		background: $white;
+		border-radius: 20px;
+		padding: $lh/2 0;
+		@include l-min {
+			grid-template-columns: repeat( 3, minmax( 50px, 1fr ) );
+			grid-column-gap: $lh/2;
+		}
+		@include xl-min {
+			grid-column-gap: $lh;
+		}
+	}
+	&__fee-image {
+		display: block;
+		width: 68px;
+		margin: 0 auto;
+		@include l-min {
+			width: 55px;
+		}
+		@include xl-min {
+			width: 68px;
+		}
+	}
+	&__fee-text {
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 300;
+		text-align: center;
+		padding: $lh/4 0;
+		@include xl-min {
+			padding: 0;
+			text-align: left;
+			font-size: 24px;
+			line-height: 28px;
+		}
+	}
+	&__fee-number {
+		font-size: 30px;
+		line-height: 34px;
+		font-weight: 700;
+		text-align: center;
+		padding: $lh/4 0;
+		@include l-min {
+			padding: 0;
+			text-align: left;
+			font-size: 28px;
+			line-height: 32px;
+		}
+		@include xl-min {
+			font-size: 36px;
+			line-height: 40px;
+		}
+	}
+	&__wrapper-button {
+		margin: $lh 0;
+	}
+	&__button {
+		width: 100%;
+		background: $black;
+		&:hover {
+			color: $black;
+			background: $white;
+		}
+		@include l-min {
+			width: auto;
+		}
+	}
+}

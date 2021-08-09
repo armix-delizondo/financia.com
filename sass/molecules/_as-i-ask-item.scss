@@ -1,0 +1,48 @@
+.as-i-ask-item {
+	background: $white;
+	padding: $lh;
+	border-radius: 25px;
+	margin-bottom: $lh;
+	transition: box-shadow .3s ease;
+	&:hover {
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, .1);
+	}
+	&:hover .as-i-ask-item__image {
+		transform: scale(1.03);
+	}
+	&__wrapper-step {
+		padding: 10px $lh;
+		margin-bottom: $lh/2;
+		border-radius: 10px;
+		&:nth-child(1) {
+			background: url('../images/back-step-number-one.jpg') center center no-repeat;
+			background-size:cover;
+		}
+		&:nth-child(2) {
+			background: url('../images/back-step-number-two.jpg') center center no-repeat;
+			background-size:cover;
+		}
+		&:nth-child(3) {
+			background: url('../images/back-step-number-three.jpg') center center no-repeat;
+			background-size:cover;
+		}
+	}
+	&__wrapper-image {
+		overflow: hidden;
+	}
+	&__image {
+		display: block;
+		width: 100%;
+		transition: transform .3s ease;
+	}
+	&__step {
+		color: $white;
+		font-size: 20px;
+		line-height: 26px;
+		font-weight: 700;
+		@include l-min {
+			font-size: 26px;
+			line-height: 30px;
+		}
+	}
+}

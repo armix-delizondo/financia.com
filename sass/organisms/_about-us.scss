@@ -1,0 +1,118 @@
+.about-us {
+	background: #EBEEF0;
+	padding: $lh*2 0;
+	padding-top: 0;
+	@include l-min {
+		padding: $lh*4 0;
+		padding-top: 0;
+	}
+	&__wrapper-content {
+		display: grid;
+		grid-template-columns: 1fr;
+		@include l-min {
+			grid-template-columns: repeat( 3, minmax( 100px, 1fr ) );
+			grid-column-gap: $lh;
+		}
+	}
+	&__wrapper-title {
+		margin-bottom: $lh;
+		@include l-min {
+			margin-bottom: $lh*2;
+		}
+	}
+	&__title {
+		text-align: center;
+	}
+	&__main-card {
+		grid-column: span 1;
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
+		align-items: center;
+		background: $white;
+		border-radius: 25px;
+		padding: $lh;
+		margin-bottom: $lh;
+		@include l-min {
+			grid-column: span 3;
+			grid-template-columns: repeat( 2, minmax( 100px, 1fr ) );
+			padding: $lh*2;
+		}
+	}
+	&__wrapper-logo {
+		margin-bottom: $lh;
+		@include l-min {
+			margin-bottom: 0;
+		}
+	}
+	&__logo {
+		width: 220px;
+		display: block;
+		margin: 0 auto;
+		@include l-min {
+			width: 300px;
+		}
+	}
+	&__main-text {
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 300;
+		@include l-min {
+			font-size: 22px;
+			line-height: 28px;
+		}
+		@include xl-min {
+			font-size: 26px;
+			line-height: 32px;
+		}
+	}
+	&__card {
+		background: $white;
+		border-radius: 25px;
+		padding: $lh;
+		margin-bottom: $lh;
+	}
+	&__icon {
+		display: block;
+		width: 80px;
+		margin-right: auto;
+		margin-bottom: $lh;
+		transition: transform .3s ease;
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 300;
+		@include l-min {
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+	&__big-card {
+		grid-column: span 1;
+		background: $white;
+		border-radius: 25px;
+		padding: $lh;
+		@include l-min {
+			grid-column: span 3;
+			padding: $lh*2;
+		}
+	}
+	&__big-text{
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 300;
+		text-align: center;
+		@include l-min {
+			font-size: 20px;
+			line-height: 26px;
+		}
+		@include xl-min {
+			font-size: 24px;
+			line-height: 30px;
+		}
+	}
+}

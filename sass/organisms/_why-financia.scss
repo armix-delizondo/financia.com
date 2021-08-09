@@ -1,0 +1,16 @@
+.why-financia {
+	background: #ECEFF1;
+	&__wrapper-title {
+		padding: $lh*3 0 $lh*10 0;
+		background: url('../images/back-elegi-financia-mobile.jpg') center center no-repeat;
+		background-size: cover;
+		@include l-min {
+			padding: $lh*5 0 $lh*9 0;
+			background: url('../images/back-elegi-financia.jpg') no-repeat;
+			background-size: cover;
+		}
+	}
+	&__title {
+		text-align: center;
+	}
+}

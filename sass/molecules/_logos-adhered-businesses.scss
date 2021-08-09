@@ -1,0 +1,20 @@
+.logos-adhered-businesses {
+	&__container-slider {
+		width: 100%;
+	}
+	&__button-prev {
+		color: $black;
+		@include l-min {
+			left: 30px;
+		}
+	}
+	&__button-next {
+		color: $black;	
+		@include l-min {
+			right: 30px;
+		}
+	}
+	.swiper-pagination-bullet-active {
+		background: $black;
+	}
+}

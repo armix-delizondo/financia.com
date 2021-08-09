@@ -1,0 +1,34 @@
+.header {	
+	background: $black;
+	padding: $lh/2;
+	&__mobile {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		@include l-min {
+			display: none;
+		}
+	}
+	&__desktop {
+		display: none;
+		@include l-min {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-columns: 1fr auto auto;
+		}
+	}
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 $lh*2;
+	}
+	&__button-link {
+		flex: 0 0 100%;
+		color: $black;
+		background: $white;
+		&:hover {
+			color: $white;
+			background: $color_primary;
+		}
+	}
+}

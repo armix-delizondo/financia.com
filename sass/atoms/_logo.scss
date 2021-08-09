@@ -1,0 +1,19 @@
+.logo {
+	&__link {
+		display: inline-block;
+	}
+	&__image {
+		display: block;
+		width: 220px;
+		transition: transform .3s ease;
+		&:hover {
+			transform: scale(1.02);
+		}
+		@include m-min {
+			width: 240px;
+		}
+		@include l-min {
+			width: 380px;
+		}
+	}
+}

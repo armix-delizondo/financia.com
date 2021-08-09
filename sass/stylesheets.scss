@@ -1,0 +1,32 @@
+// @config
+@import '@config/reset';
+@import '@config/breakpoints';
+@import '@config/variables';
+@import '@config/grid';
+@import '@config/config';
+
+// Atoms
+@import 'atoms/logo';
+@import 'atoms/social';
+@import 'atoms/hamburger-menu';
+
+// Molecules
+@import 'molecules/menu-mobile';
+@import 'molecules/menu-desktop';
+@import 'molecules/calculator';
+@import 'molecules/as-i-ask-item';
+@import 'molecules/slider-products';
+@import 'molecules/why-financia-items';
+@import 'molecules/logos-adhered-businesses';
+
+
+// Organisms
+@import 'organisms/header';
+@import 'organisms/cover';
+@import 'organisms/your-loan';
+@import 'organisms/as-i-ask';
+@import 'organisms/our-products';
+@import 'organisms/why-financia';
+@import 'organisms/adhered-businesses';
+@import 'organisms/about-us';
+@import 'organisms/footer';

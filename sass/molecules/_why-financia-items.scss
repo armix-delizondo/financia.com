@@ -1,0 +1,41 @@
+.why-financia-items {
+	display: grid;
+	grid-template-columns: repeat( 2, minmax( 50px, 1fr ) );
+	justify-content: center;
+	background: $white;
+	border-radius: 25px;
+	padding: $lh;
+	margin-top: -50px;
+	text-align: center;
+	@include l-min {
+		grid-template-columns: repeat( 5, minmax( 50px, 1fr ) );
+		padding: $lh*1.5;
+		margin-top: -150px;
+	}
+	&__wrapper-icon {
+		margin-bottom: $lh;
+		@include l-min {
+			margin-bottom: 0;
+		}
+	}
+	&__wrapper-icon:nth-child(5) {
+		grid-column: span 2;
+		overflow: hidden;
+		@include l-min {
+			grid-column: span 1;
+		}
+	}
+	&__icon {
+		display: block;
+		width: 110px;
+		margin: 0 auto;
+		margin-bottom: $lh/2;
+		transition: transform .3s ease;
+		&:hover {
+			transform: scale(1.04);
+		}
+		@include l-min {
+			width: 125px;
+		}
+	}
+}
